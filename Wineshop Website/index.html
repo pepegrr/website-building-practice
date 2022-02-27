@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Wineshop</title>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="container">
+                <header class="header">
+                    <div class="contacts">
+                        <div class="contacts__address">Новокузнечный переулок 4/1</div>
+                        <a href="tel: +78121234567" class="contacts__phone phone">8 (812) 123-45-67</a>
+                    </div>
+                    <div class="nav">
+                        <ul class="nav__menu">
+                            <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
+                            <li class="nav__item"><a href="#featured" class="nav__link">Коллекции</a></li>
+                            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="hero-content">
+                    <div class="hero-content__buttons" id="catalog">
+                        <a href="#" class="btn btn__hero">Винная карта</a>
+                        <a href="#degustation" class="btn btn__hero">Дегустация</a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__content">
+                    <h1 class="heading description__heading">Лучший вкус — это вкус долголетнего вина</h1>
+                    <p class="text description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus pulvinar blandit elit. Vestibulum quam ultrices nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet rutrum. Lectus auctor purus ultrices enim ultrices. Augue fringilla tellus tortor orci ultrices sed. Viverra cras sapien, pellentesque viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel pretium euismod diam. Pellentesque amet, lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam quis.</p>
+                    <div class="description__img">
+                        <img src="img/wineglass.svg" alt="Wine glass">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="container">
+                <div class="featured__content">
+                    <div class="collections">
+                        <h2 class="collections__heading">Новинки коллекций</h2>
+                        <h1 class="heading">Март 1980<br>Урожай Марселя</h1>
+                        <p class="text featured__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac.</p>
+                        <table class="collections-table">
+                            <tr class="collections-table__row">
+                                <td class="collections-table__year">1980</td>
+                                <td class="collections-table__info">
+                                    <h3 class="collections-table__heading">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                    <p class="collections-table__text">Красочная бутылка вина из Марселя</p>
+                                </td>
+                            </tr>
+                            <tr class="collections-table__row">
+                                <td class="collections-table__year">1980</td>
+                                <td class="collections-table__info">    
+                                    <h3 class="collections-table__heading">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                    <p class="collections-table__text">Красочная бутылка вина из Марселя</p>
+                                </td>
+                            </tr>
+                            <tr class="collections-table__row">
+                                <td class="collections-table__year">1980</td>
+                                <td class="collections-table__info">    
+                                    <h3 class="collections-table__heading">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                    <p class="collections-table__text">Красочная бутылка вина из Марселя</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="text featured__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac.</p>
+                        <a href="#" class="btn btn__featured">Узнать подробнее</a>
+                    </div>
+                    <div class="images">
+                        <img src="img/Rectangle11.svg" alt="picture">
+                        <img src="img/Rectangle12.svg" alt="picture">
+                        <img src="img/Rectangle13.svg" alt="picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="degustation" id="degustation">
+            <div class="container">
+                <img class="degustation__img--left" src="img/grape.svg" alt="grape vine">
+                <img class="degustation__img--right" src="img/barrel.svg" alt="barrel">
+                <div class="degustation__content">
+                    <h1 class="heading degustation__heading">Запись на дегустацию</h1>
+                    <p class="text degustation__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum.</p>
+                    <form class="form" action="#" method="post">
+                        <input class="form__contact firstName" type="text" name="name" placeholder="Имя">
+                        <input class="form__contact tel" type="tel" name="phone" placeholder="Телефон"><br>
+                        <select class="form__boutique" id="boutique" name="boutique">
+                            <option value="nevsky">Бутик на Невском 103</option>
+                            <option value="other1">Другой бутик</option>
+                            <option value="other2">Другой бутик</option>
+                        </select>
+                        <button class="submit" type="submit">Записаться</button>
+                    </form>                    
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__content--top">
+                        <ul class="footer__menu">
+                            <li class="footer__item"><a href="#" class="nav__link">Главная</a></li>
+                            <li class="footer__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+                            <li class="footer__item"><a href="#" class="nav__link">Поставщики</a></li>
+                            <li class="footer__item"><a href="#featured" class="nav__link">Коллекции</a></li>
+                            <li class="footer__item"><a href="#degustation" class="nav__link">Дегустация</a></li>
+                            <li class="footer__item"><a href="#featured" class="nav__link">Коллекция 2020</a></li>
+                            <li class="footer__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content--bottom" id="contacts">
+                        <ul class="footer__menu--bottom">
+                            <li class="footer__item--bottom"><a href="#" class="nav__link">Винный бутик LE CORTE</a></li>
+                            <li class="footer__item--bottom"><a href="tel: +78121234567" class="nav__link">8 (812) 123-45-67</a></li>
+                            <li class="footer__item--bottom socials">
+                                <ul class="socials__list">
+                                    <li class="socials__item"><a href="https://www.youtube.com/"><img src="img/carbon_logo-youtube.svg" alt="youtube"></a></li>
+                                    <li class="socials__item"><a href="https://www.youtube.com/"><img src="img/entypo-social_vk.svg" alt="vk"></a></li>
+                                    <li class="socials__item"><a href="https://www.youtube.com/"><img src="img/bx_bxl-facebook.svg" alt="facebook"></a></li>                                    
+                                </ul>                                
+                            </li>
+                            <li class="footer__item--bottom">&copy;LE-CORTE.RU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        
+    <script src="script.js"></script>    
+    </body>
+</html>

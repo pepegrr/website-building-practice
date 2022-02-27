@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@mixin montreg {
+    font-family: 'MontserratRegular', sans-serif;
+}
+@mixin montmed {
+    font-family: 'MontserratMedium', sans-serif;
+}
+@mixin montsbold {
+    font-family: 'MontserratSemiBold', sans-serif;
+}
+@mixin playfair {
+    font-family: 'Playfair', sans-serif;
+}
+
+//font-sizes
+$small: 13px;
+$base: 14px;
+$medium: 16px;
+$large: 18px;
+$extra: 36px;
