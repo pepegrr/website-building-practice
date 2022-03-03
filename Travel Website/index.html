@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <title>Thousand Sunny</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <div class="container">
+            <header class="row header">
+                <nav class="navbar">
+                    <div class="logo col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 text-center text-md-start">
+                        <a class="navbar-brand text-center text-md-start" href="#">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
+                    </div>                        
+                    <div class="navbar-nav flex-row col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 justify-content-around justify-content-md-end flex-column flex-md-row align-items-center">
+                        <a class="nav-link me-md-5 active" href="#">Home</a>
+                        <a class="nav-link me-md-5" href="#">Destinations</a>
+                        <a class="nav-link me-md-5" href="#">About</a>
+                        <a class="nav-link me-md-5" href="#">Partner</a>
+                        <div class="navbar__btns d-flex">
+                            <button type="button" class="btn btn--header btn--header--secondary">Login</button>
+                            <button type="button" class="btn btn--header btn--header--primary">Register</button> 
+                        </div>                         
+                    </div>
+                </nav>
+            </header>
+
+            <main class="main">
+                <!-- HERO START -->
+                <section class="row hero">
+                    <div class="finder col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <h1 class="finder__heading">Explore and<br>Travel</h1>
+                        <p class="finder__form-heading">Holiday finder</p>
+                        <form class="finder__form" action="" method="post">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>Location</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>Activity</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>Grade</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>Date</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn--hero btn--primary" type="submit">Explore</button>
+                        </form>            
+                    </div>
+
+                    <div class="hero__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <img class="img-fluid pt-4 ps-md-5" src="images/thousand-01.png" alt="banner">
+                    </div>                    
+                </section>
+                <!-- HERO END -->
+
+                <!-- ABOUT START -->
+                <section class="row about text-center text-md-start justify-content-center justify-content-md-between">
+                    <div class="about__img col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                        <img class="img-fluid" src="images/Thousand-02.png" alt="about">
+                    </div>
+                    <div class="about__description col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 ps-md-5 pb-5">
+                        <h2 class="about__heading">A new way to explore the world</h2>
+                        <p class="about__text">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                        <button class="btn btn--primary" type="submit">Learn more</button>
+                    </div>
+                </section>
+                <!-- ABOUT END -->
+
+                <!-- FEATURED START -->
+                <section class="row featured justify-content-center justify-content-md-between">
+                    <div class="section__top d-flex flex-wrap justify-content-center justify-content-md-between align-items-center">
+                        <div class="section__heading text-center text-md-start">
+                            <h2 class="featured__heading">Featured destinations</h2>
+                        </div>
+                        <div class="section__viewall">
+                            <a class="viewall__link" href="#">View all</a>    
+                        </div>
+                    </div>
+                    <a class="featured__link col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-2 me-sm-2" href="#"><div class="featured__item raja">
+                        <div class="featured__label"><span class="label__heading">Raja Ampat</span><br>Indonesia</div>
+                    </div></a>
+
+                    <a class="featured__link col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-2" href="#">
+                        <div class="featured__item fanj">
+                            <div class="featured__label">
+                                <span class="label__heading">Fanjingshan</span><br>China
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="featured__link col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-2 me-sm-2" href="#">
+                        <div class="featured__item vevey">
+                            <div class="featured__label">
+                                <span class="label__heading">Vevey</span><br>Switzerland
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="featured__link col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-2" href="#">
+                        <div class="featured__item skadar">
+                            <div class="featured__label">
+                                <span class="label__heading">Skadar</span><br>Montenegro
+                            </div>
+                        </div>
+                    </a>
+
+                </section>
+                <!-- FEATURED END -->
+
+                <!-- GUIDES START -->
+                <section class="row guides text-center text-md-start justify-content-center justify-content-md-between">                    
+                    <div class="guides__description col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ps-md-4">
+                        <h2 class="guides__heading">Guides by Thousand Sunny</h2>
+                        <p class="guides__text">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+                        <button class="btn btn--primary" type="submit">Download</button>
+                    </div>
+                    <div class="guides__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pb-5">
+                        <img class="img-fluid" src="images/Thousand-03.png" alt="about">
+                    </div>
+                </section>
+                <!-- GUIDES END -->
+
+                <!-- TESTIMONIALS START -->
+                <section class="row testimonials text-center text-md-start justify-content-center justify-content-md-between">
+                    <div class="testimonials-top col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <h2 class="testimonials__heading">Testimonials</h2>
+                    </div>                
+                    <!--- CAROUSEL START -->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-item__content d-flex flex-column align-items-center flex-md-row justify-content-md-between">
+                                    <div class="carousel-item__text">
+                                        <div class="carousel-text__rating">
+                                            <img class="rating-stars" src="images/rating.svg" alt="rating">
+                                        </div>
+                                        <p class="carousel-text__review">
+                                            “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+                                        </p>
+                                        <div class="carousel-text__client">
+                                            <h3 class="carousel-text__name">
+                                                Edward Newgate
+                                            </h3>
+                                            <p class="carousel-text__position">
+                                                Founder Circle
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item__img">
+                                        <div class="carousel-img">
+                                            <img class="customer-img" src="images/image8.png" alt="customer1" >
+                                            <div class="carousel-img__label">
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <img class="carousel-control-prev-icon" src="images/previous.svg" alt="prev" aria-hidden="true">
+                                                    <span class="visually-hidden">Previous</span>
+                                                  </button>
+                                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <img class="carousel-control-next-icon" src="images/next.svg" alt="next"aria-hidden="true">
+                                                    <span class="visually-hidden">Next</span>
+                                                  </button>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item__content d-flex flex-column align-items-center flex-md-row justify-content-md-between">
+                                    <div class="carousel-item__text">
+                                        <div class="carousel-text__rating">
+                                            <img class="rating-stars" src="images/rating.svg" alt="rating">
+                                        </div>
+                                        <p class="carousel-text__review">
+                                            “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+                                        </p>
+                                        <div class="carousel-text__client">
+                                            <h3 class="carousel-text__name">
+                                                Edward Newgate
+                                            </h3>
+                                            <p class="carousel-text__position">
+                                                Founder Circle
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item__img">
+                                        <div class="carousel-img">
+                                            <img class="customer-img" src="images/image8.png" alt="customer1" >
+                                            <div class="carousel-img__label">
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <img class="carousel-control-prev-icon" src="images/previous.svg" alt="prev" aria-hidden="true">
+                                                    <span class="visually-hidden">Previous</span>
+                                                  </button>
+                                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <img class="carousel-control-next-icon" src="images/next.svg" alt="next"aria-hidden="true">
+                                                    <span class="visually-hidden">Next</span>
+                                                  </button>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item__content d-flex flex-column align-items-center flex-md-row justify-content-md-between">
+                                    <div class="carousel-item__text">
+                                        <div class="carousel-text__rating">
+                                            <img class="rating-stars" src="images/rating.svg" alt="rating">
+                                        </div>
+                                        <p class="carousel-text__review">
+                                            “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+                                        </p>
+                                        <div class="carousel-text__client">
+                                            <h3 class="carousel-text__name">
+                                                Edward Newgate
+                                            </h3>
+                                            <p class="carousel-text__position">
+                                                Founder Circle
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item__img">
+                                        <div class="carousel-img">
+                                            <img class="customer-img" src="images/image8.png" alt="customer1" >
+                                            <div class="carousel-img__label">
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <img class="carousel-control-prev-icon" src="images/previous.svg" alt="prev" aria-hidden="true">
+                                                    <span class="visually-hidden">Previous</span>
+                                                  </button>
+                                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <img class="carousel-control-next-icon" src="images/next.svg" alt="next"aria-hidden="true">
+                                                    <span class="visually-hidden">Next</span>
+                                                  </button>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <!--- CAROUSEL END -->
+                </section>
+                <!-- TESTIMONIALS END -->
+
+                <!-- TRENDING START -->
+                <section class="row trending justify-content-center justify-content-md-between">
+                    <div class="section__top d-flex flex-wrap justify-content-center justify-content-md-between align-items-center col-12">
+                        <div class="section__heading text-center text-md-start">
+                            <h2 class="trending__heading">Trending stories</h2>
+                        </div>
+                        <div class="section__viewall">
+                            <a class="viewall__link" href="#">View all</a>    
+                        </div>
+                    </div>
+                    <div class="trending__content d-flex flex-wrap justify-content-center justify-content-md-between align-items-center col-12">
+                        <div class="trending__item">
+                            <div class="trending__img healing"></div>
+                            <h4 class="trending__h4">The many benefits of taking a healing holiday</h4>
+                            <p class="trending__text">'Helaing holidays' are on the rise to help maximise your health and happines...</p>
+                            <a class="trending__more" href="#">Read more</a>
+                        </div>
+
+                        <div class="trending__item">
+                            <div class="trending__img kyoto"></div>
+                            <h4 class="trending__h4">The many benefits of taking a healing holiday</h4>
+                            <p class="trending__text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
+                            <a class="trending__more" href="#">Read more</a>
+                        </div>
+
+                        <div class="trending__item">
+                            <div class="trending__img yucatan"></div>
+                            <h4 class="trending__h4">The many benefits of taking a healing holiday</h4>
+                            <p class="trending__text">It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...</p>
+                            <a class="trending__more" href="#">Read more</a>
+                        </div>
+
+                        <div class="trending__item">
+                            <div class="trending__img surf"></div>
+                            <h4 class="trending__h4">The many benefits of taking a healing holiday</h4>
+                            <p class="trending__text">If learning to surf has in on your to-do list for a while, the good news is: it’s never too late...</p>
+                            <a class="trending__more" href="#">Read more</a>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- TRENDING END -->
+
+                
+            </main>
+        </div>
+
+        <footer class="footer mt-auto">
+            <div class="container">
+                <div class="footer-top row">
+                    <div class="footer__info col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                        <img class="footer__logo" src="images/logo.svg" alt="logo">
+                        <p class="footer__text">Plan and book your perfect trip with expert advice, travel tips destination information from us</p>
+                        <p class="footer__copyright">&copy;2020 Thousand Sunny. All rights reserved</p>
+                    </div>
+                    <div class="footer__links col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 d-flex flex-wrap flex-column align-items-start flex-md-row justify-content-lg-end ">
+                        <div class="destinations">
+                            <h5 class="links__heading">Destinations</h5>
+                            <ul class="links__list">
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Africa</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Antarctica</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Asia</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Europe</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">America</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shop">
+                            <h5 class="links__heading">Shop</h5>
+                            <ul class="links__list">
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Destination Guides</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Pictorial & Gifts</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Special Offers</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Delivery Times</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="interests">
+                            <h5 class="links__heading">Interests</h5>
+                            <ul class="links__list">
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Adventure Travel</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Art And Culture</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Wildlife And Nature</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Family Holidays</a>
+                                </li>
+                                <li class="links__item">
+                                    <a href="#" class="links__link">Food And Drink</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="footer-bottom row">                    
+                    <div class="socials">
+                        <a href="#" class="socials__link">
+                            <img class="socials__icon" src="images/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#" class="socials__link">
+                            <img class="socials__icon" src="images/fb.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="socials__link">
+                            <img class="socials__icon" src="images/inst.svg" alt="instagram">
+                        </a>
+                        <a href="#" class="socials__link">
+                            <img class="socials__icon" src="images/linkedin.svg" alt="linkedin">
+                        </a>
+                        <a href="#" class="socials__link">
+                            <img class="socials__icon" src="images/yt.svg" alt="youtube">
+                        </a>
+                    </div>                    
+                </div>
+            </div>            
+        </footer>
+        
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    </body>
+</html>
