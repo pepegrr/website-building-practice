@@ -1,11 +1,11 @@
 'use strict';
 
-let dogNumber = Math.trunc(Math.random() * 30) + 1;
+let dogNumber = Math.trunc(Math.random() * 20) + 1;
 let showNumber = document.querySelector('.number__value');
 let image = document.querySelector('.image');
 image.src = 'img/start.jpg';
 let message = document.querySelector('.info-area__text');
-let score = 30;
+let score = 20;
 let highscore = 0;
 let currentScore = document.querySelector('.current-value');
 let currentHigh = document.querySelector('.best-value');
@@ -48,10 +48,11 @@ go.addEventListener('click', function () {
 });
 
 restart.addEventListener('click', function () {
-    dogNumber = Math.trunc(Math.random() * 30) + 1;
-    score = 30;
+    dogNumber = Math.trunc(Math.random() * 20) + 1;
+    score = 20;
     currentScore.textContent = score;
     image.src = 'img/start.jpg';
     message.textContent = 'Start guessing...';
     showNumber.textContent = '?';
+    document.querySelector('.player-input').value = '';
 });
