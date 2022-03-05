@@ -1,7 +1,6 @@
 'use strict';
 
 let dogNumber = Math.trunc(Math.random() * 30) + 1;
-console.log(dogNumber);
 let showNumber = document.querySelector('.number__value');
 let image = document.querySelector('.image');
 image.src = 'img/start.jpg';
@@ -50,7 +49,6 @@ go.addEventListener('click', function () {
 
 restart.addEventListener('click', function () {
     dogNumber = Math.trunc(Math.random() * 30) + 1;
-    console.log(dogNumber);
     score = 30;
     currentScore.textContent = score;
     image.src = 'img/start.jpg';
