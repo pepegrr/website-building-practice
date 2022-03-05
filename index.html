@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Number Dog</title>
+    </head>
+    <body>
+        <header class="top">
+            <h1 class="top__title">Guess the Number!</h1>
+            <br />
+            <span class="top__subtitle">(Between 1 and 30)</span>
+        </header>
+
+        <div class="number">
+            <div class="number__value">?</div>
+        </div>
+        <div class="player-area">
+            <div class="player-area__input">
+                <input class="player-input" type="number" /><br />
+                <button class="button-go" type="button">Go!</button>
+            </div>
+            <div class="player-area__img">
+                <img class="image" src="" alt="..." />
+            </div>
+            <div class="player-area__highscore">
+                <div class="score__current">
+                    Score: <span class="current-value">30</span>
+                </div>
+                <div class="score__best">
+                    Highscore: <span class="best-value">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="info-area">
+            <h2 class="info-area__text">Start guessing...</h2>
+        </div>
+        <div class="restart">
+            <button class="button-restart" type="button">Restart</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
