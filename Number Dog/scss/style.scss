@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4b2a61;
+    background-color: #7e78fa;
+}
+.top {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    &__title {
+        font-weight: 700px;
+        font-size: 36px;
+        text-shadow: 5px 5px 2px #7bd7bf;
+    }
+}
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    &__value {
+        font-size: 48px;
+        padding: 10px 50px;
+        border: 3px dotted #4b2a61;
+        border-radius: 30px;
+        text-shadow: 3px 3px 2px #7bd7bf;
+    }
+}
+.player-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    gap: 10px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input {
+        flex: 1;
+    }
+    &__img {
+        flex: 1;
+    }
+    &__highscore {
+        flex: 1;
+        font-size: 24px;
+    }
+}
+.player-input {
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    color: #4b2a61;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.button-go,
+.button-restart {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4b2a61;
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:active {
+        outline: 2px solid #4b2a61;
+        transform: translate(3px, 2px);
+    }
+}
+.image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 2px #7bd7bf;
+}
+.info-area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &__text {
+        margin-bottom: 10px;
+    }
+}
+.restart {
+    display: flex;
+    justify-content: center;
+}
