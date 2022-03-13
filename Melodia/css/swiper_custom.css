@@ -1,0 +1,45 @@
+@font-face {
+  src: url("../fonts/BebasNeue.ttf") format("truetype");
+  font-family: 'BebasNeue';
+}
+
+.swiper {
+  height: 185px;
+  width: 200px;
+  text-align: center;
+}
+
+.floor-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'BebasNeue';
+  font-weight: 400;
+  font-size: 64px;
+  color: #635854;
+  background-color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  left: 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.swiper-button-prev {
+  top: 5px;
+}
+
+.swiper-button-next {
+  top: auto;
+  bottom: 5px;
+}

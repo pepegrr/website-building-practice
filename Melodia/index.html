@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper_custom.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>ЖК "Мелодия"</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
+                </div>
+                <nav class="header__nav">
+                    <a class="nav__link active" href="#">Подобрать квартиру</a>
+                    <a class="nav__link" href="#">Забронировать квартиру</a>
+                    <a class="nav__link" href="#">Ход строительства</a>
+                    <a class="nav__link" href="#">Проектная декларация</a>
+                </nav>
+                <div class="header__phone">
+                    <p class="phone__text">Закажите звонок:</p>
+                    <a class="phone__link" href="tel: +78431234567">8 (843) 123-45-67</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main__img">
+                    <img class="main__building" src="img/floor2.png" alt="building">
+                </div>                
+                <div class="main__content">
+                    <h1 class="main__header">Выберите желаемый этаж</h1>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="floor-slide swiper-slide" data-floor="2">02</div>
+                            <div class="floor-slide swiper-slide" data-floor="3">03</div>
+                            <div class="floor-slide swiper-slide" data-floor="4">04</div>
+                            <div class="floor-slide swiper-slide" data-floor="5">05</div>
+                            <div class="floor-slide swiper-slide" data-floor="6">06</div>
+                            <div class="floor-slide swiper-slide" data-floor="7">07</div>
+                            <div class="floor-slide swiper-slide" data-floor="8">08</div>
+                            <div class="floor-slide swiper-slide" data-floor="9">09</div>
+                            <div class="floor-slide swiper-slide" data-floor="10">10</div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>                    
+                    </div>
+                    <button class="main__button">Смотреть квартиры на этаже</button>
+                </div>
+
+                <div class="modal hidden">
+                    <div class="modal__plan">
+                        <h2 class="modal__header">Этаж <span class="modal__floor-number"></span></h2>
+                        <img class="plan__img" src="img/Floor11-181.png" alt="floorplan">
+                    </div>
+                    <div class="modal__info">
+                        <div class="modal__close">
+                            <img class="close" src="img/close.svg" alt="close" >
+                        </div>
+                        <h2 class="modal__header">Выберите квартиру</h2>
+                        <ul class="modal__list">
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                            <li class="modal__item"><a class="modal__link" href="#">кв. 40, 2 комн. 50 кв. м.</a></li>
+                        </ul>
+                        <p class="modal__note">Квартиры, отмеченные серым, уже выкуплены</p>
+                    </div>
+                </div>
+            </div>
+        </main>      
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__contacts">
+                    <div class="footer__emblem">
+                        <img class="emblem__img" src="img/for_fav-011.png" alt="emblem">
+                    </div>
+                    <div class="footer__phone">
+                        <p class="footer-phone__text">Закажите звонок:</p>
+                        <a class="footer-phone__link" href="tel: +78431234567">8 (843) 123-45-67</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a class="socials__link" href="#"><img class="socials__img" src="img/001-facebook.svg" alt="facebook"></a>
+                        <a class="socials__link" href="#"><img class="socials__img" src="img/002-instagram.svg" alt="instagram" ></a>
+                        <a class="socials__link" href="#"><img class="socials__img" src="img/003-twitter.svg" alt="twiter"></a>
+                        <a class="socials__link" href="#"><img class="socials__img" src="img/004-youtube.svg" alt="youtube"></a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Публичная оферта</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    
+    
+    <div class="overlay hidden"></div>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+</html>
